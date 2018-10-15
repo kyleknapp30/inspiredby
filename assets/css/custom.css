@@ -1,0 +1,405 @@
+/*************************************************/
+/******** Customize ******************************/
+/*************************************************/
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,700");
+/******** Colors ********/
+a {
+  text-decoration: none; }
+  a:visited {
+    color: inherit; }
+  a:hover {
+    color: blue;
+    transition: color .1s; }
+  a:active {
+    color: blue; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/*************************************************/
+/******** HEADER *********************************/
+/*************************************************/
+.header-container {
+  width: 100%;
+  max-width: 1450px;
+  background: white;
+  margin: 0 auto 50px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid .5px #f0f0f0;
+  /** Dropdown Animation **/ }
+  .header-container .header-logo img {
+    height: 42px;
+    width: auto;
+    display: block;
+    margin: 10px; }
+  @media only screen and (min-width: 790px) {
+    .header-container {
+      flex-direction: column;
+      border-bottom: none; }
+      .header-container .header-logo img {
+        margin: 30px 0;
+        height: 50px;
+        width: auto; } }
+  .header-container .nav_toggle {
+    position: relative;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
+    opacity: 1;
+    margin: 10px; }
+    .header-container .nav_toggle:hover {
+      opacity: .5; }
+    .header-container .nav_toggle.active .top {
+      transform: translateY(10px) translateX(0) rotate(45deg);
+      background: #BEC2C6; }
+    .header-container .nav_toggle.active .middle {
+      opacity: 0;
+      background: #BEC2C6; }
+    .header-container .nav_toggle.active .bottom {
+      transform: translateY(-10px) translateX(0) rotate(-45deg);
+      background: #BEC2C6; }
+    @media only screen and (min-width: 790px) {
+      .header-container .nav_toggle {
+        display: none; } }
+    .header-container .nav_toggle span {
+      background: #BEC2C6;
+      border: none;
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all .35s ease;
+      cursor: pointer;
+      border-radius: 1px; }
+      .header-container .nav_toggle span:nth-of-type(2) {
+        top: 10px; }
+      .header-container .nav_toggle span:nth-of-type(3) {
+        top: 20px; }
+  .header-container .sm-menu {
+    list-style: none;
+    position: fixed;
+    display: block;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: white;
+    opacity: 0;
+    visibility: visible;
+    z-index: 99;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2); }
+    .header-container .sm-menu.open {
+      opacity: 1;
+      visibility: visible; }
+    .header-container .sm-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      height: 100%;
+      border-top: solid .5px #f0f0f0; }
+      .header-container .sm-menu ul li {
+        display: block;
+        border-bottom: solid .5px #f0f0f0;
+        position: relative; }
+        .header-container .sm-menu ul li:last {
+          border-bottom: none;
+          padding-bottom: 15px; }
+        .header-container .sm-menu ul li a {
+          display: block;
+          padding: 15px 0;
+          position: relative;
+          color: #1F2930;
+          text-decoration: none;
+          overflow: hidden;
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 14px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-weight: bold; }
+          .header-container .sm-menu ul li a:hover, .header-container .sm-menu ul li a:active {
+            background: #fdb924;
+            color: inherit;
+            transition: color .3s; }
+    @media only screen and (min-width: 790px) {
+      .header-container .sm-menu {
+        display: none; } }
+  .header-container .lg-menu {
+    display: none;
+    list-style: none; }
+    @media only screen and (min-width: 790px) {
+      .header-container .lg-menu {
+        display: block;
+        width: 90%;
+        max-width: 700px; }
+        .header-container .lg-menu ul {
+          border-top: solid 2px #1F2930;
+          list-style: none;
+          border-bottom: solid 2px #1F2930;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin: 0 auto; }
+          .header-container .lg-menu ul li {
+            margin: 15px; }
+            .header-container .lg-menu ul li a {
+              display: block;
+              color: #1F2930;
+              font-family: "Josefin Sans", sans-serif;
+              font-size: 14px;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              font-weight: bold; }
+              .header-container .lg-menu ul li a:hover, .header-container .lg-menu ul li a:active {
+                opacity: .5; } }
+@-webkit-keyframes nav-down {
+  0% {
+    height: 0px; }
+  100% {
+    height: 100px; } }
+@-moz-keyframes nav-down {
+  0% {
+    height: 0px; }
+  100% {
+    height: 100px; } }
+@-o-keyframes nav-down {
+  0% {
+    height: 0px; }
+  100% {
+    height: 100px; } }
+@keyframes nav-down {
+  0% {
+    height: 0px; }
+  100% {
+    height: 100px; } }
+/*************************************************/
+/******** MAIN ***********************************/
+/*************************************************/
+main .category-banner-recipes {
+  width: 100%;
+  max-width: 1170px;
+  height: 300px;
+  margin: 0 auto 40px;
+  background: url(img/page-banner-recipe.jpg) no-repeat;
+  background-position: center;
+  background-size: cover; }
+main .category-intro {
+  width: 84%;
+  max-width: 700px;
+  margin: 60px auto; }
+  main .category-intro p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    color: #1F2930;
+    line-height: 150%;
+    margin-bottom: 20px; }
+@media only screen and (min-width: 790px) {
+  main .category-banner-recipes {
+    height: 600px; }
+  main .category-intro p {
+    font-size: 18px; } }
+
+/*************************************************/
+/******** FOOTER *********************************/
+/*************************************************/
+footer {
+  width: 100%;
+  max-width: 1170px;
+  margin: 50px auto 0; }
+  footer .footer-newsletter-mob {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0 15px;
+    border-top: solid 2px #1F2930; }
+    footer .footer-newsletter-mob * {
+      margin: 0 5% 10px; }
+    footer .footer-newsletter-mob h2 {
+      text-align: center;
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: bold;
+      color: #1F2930; }
+    footer .footer-newsletter-mob p {
+      text-align: center;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 14px;
+      color: #1F2930; }
+    footer .footer-newsletter-mob .hs-form-mob {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin: 20px 0 0px; }
+      footer .footer-newsletter-mob .hs-form-mob .hs-form input[type="email"] {
+        background: #fff;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border: none;
+        margin: 0;
+        padding: 13px 15px;
+        height: 36px;
+        border-radius: 0;
+        font-family: "Josefin Sans", sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #1F2930;
+        width: 100%; }
+      footer .footer-newsletter-mob .hs-form-mob div.hbspt-form div.hs_submit input.hs-button {
+        background-image: linear-gradient(to bottom right, #FFE372, #FCB322);
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 13px 15px;
+        font-family: "Josefin Sans", sans-serif;
+        border-radius: 0;
+        height: 36px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        color: #1F2930; }
+        footer .footer-newsletter-mob .hs-form-mob div.hbspt-form div.hs_submit input.hs-button:hover {
+          cursor: pointer; }
+        footer .footer-newsletter-mob .hs-form-mob div.hbspt-form div.hs_submit input.hs-button:active {
+          opacity: .5; }
+  footer .footer-row1 {
+    display: flex;
+    flex-direction: column; }
+    footer .footer-row1 .social-icons {
+      list-style: none;
+      width: 100%;
+      margin: 0;
+      border-top: solid 2px #1F2930;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+      justify-content: center; }
+      footer .footer-row1 .social-icons li {
+        margin: 10px; }
+        footer .footer-row1 .social-icons li a img {
+          width: 28px;
+          height: 28px; }
+          footer .footer-row1 .social-icons li a img:hover {
+            opacity: .5; }
+    footer .footer-row1 .footer-links {
+      width: 100%;
+      border-top: solid 2px #1F2930;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 15px;
+      list-style: none; }
+      footer .footer-row1 .footer-links li a {
+        display: block;
+        color: #1F2930;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 15px 15px 0; }
+        footer .footer-row1 .footer-links li a:hover {
+          opacity: .5; }
+    footer .footer-row1 .newsletter-sign-up {
+      display: none;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      margin: 0; }
+      footer .footer-row1 .newsletter-sign-up .hs-form input[type="email"] {
+        background: #fff;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border: none;
+        margin: 0;
+        padding: 13px 15px;
+        height: 36px;
+        border-radius: 0;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 14px;
+        color: #1F2930; }
+      footer .footer-row1 .newsletter-sign-up div.hbspt-form div.hs_submit input.hs-button {
+        background-image: linear-gradient(to bottom right, #FFE372, #FCB322);
+        border: none;
+        margin: 0;
+        padding: 13px 15px;
+        font-family: "Josefin Sans", sans-serif;
+        border-radius: 0;
+        height: 36px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        color: #1F2930; }
+        footer .footer-row1 .newsletter-sign-up div.hbspt-form div.hs_submit input.hs-button:hover {
+          cursor: pointer; }
+        footer .footer-row1 .newsletter-sign-up div.hbspt-form div.hs_submit input.hs-button:active {
+          opacity: .5; }
+  footer .footer-row2 {
+    display: flex;
+    border-top: solid 2px #1F2930;
+    text-align: center; }
+    footer .footer-row2 p {
+      margin: 15px auto;
+      text-align: center;
+      font-family: "Josefin Sans", sans-serif;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: #1F2930; }
+  @media only screen and (min-width: 900px) {
+    footer .footer-newsletter-mob {
+      display: none; }
+    footer .footer-row1 {
+      display: flex;
+      padding: 10px 15px;
+      flex-direction: row;
+      align-items: center;
+      border-top: solid 2px #1F2930; }
+      footer .footer-row1 .social-icons {
+        list-style: none;
+        border-top: none;
+        display: flex;
+        max-width: 200px;
+        flex-direction: row;
+        justify-content: flex-start; }
+        footer .footer-row1 .social-icons li {
+          margin: 0 10px; }
+          footer .footer-row1 .social-icons li a img {
+            width: 28px;
+            height: 28px; }
+            footer .footer-row1 .social-icons li a img:hover {
+              opacity: .5; }
+      footer .footer-row1 .footer-links {
+        flex: 2;
+        border-top: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left; }
+      footer .footer-row1 .newsletter-sign-up {
+        display: flex; }
+    footer .footer-row2 {
+      display: flex;
+      border-top: solid 2px #1F2930;
+      text-align: center; }
+      footer .footer-row2 p {
+        margin: 15px 15px;
+        text-align: left; } }
+
+/*# sourceMappingURL=custom.css.map */

@@ -14,63 +14,87 @@
 
 
 
-	<div class="footer-container">
-        <div class="footer row">
-    <!-- newsletter area -->
-    <div class="footer-subscribe" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/newsletter-bg.jpg)">
-        <div class="footer-subscribe-cta">
-            <h3>Stay in touch</h3>
-            <p>Sign up to hear the latest news, sharpening tips, and new recipes from Work Sharp Culinary.</p>
-            <!--[if lte IE 8]>
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-            <![endif]-->
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-              hbspt.forms.create({ 
+
+        <footer>
+            <div class="footer-newsletter-mob">
+                <h2>Sign up for our newsletter</h2>
+                <p>Sign up for the latest news, sharpening tops, and new recipes from Work Sharp Culinary.</p>
+                <div class="hs-form-mob">
+                    <!--[if lte IE 8]>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                  hbspt.forms.create({ 
+                    css: '',
+                    portalId: '3804151',
+                    formId: '39e683fc-903a-4b93-9097-63d0a3b2ffcd'
+                  });
+                </script>
+                </div>
+                <!--<form>
+                    <input type="text" name="email" placeholder="your email">
+                    <input type="submit" value="Sign Up">
+                </form>-->
+            </div>
+            <div class="footer-row1">
+                <ul class="social-icons">
+                    <li>
+                        <a href="#">
+                            <img src="/wp-content/themes/inspiredby/assets/images/social-icon-facebook.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/wp-content/themes/inspiredby/assets/images/social-icon-pinterest.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/wp-content/themes/inspiredby/assets/images/social-icon-youtube.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="/wp-content/themes/inspiredby/assets/images/social-icon-instagram.jpg">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li> <a href="#">Privacy</a></li>
+                    <li> <a href="#">Contact</a> </li>
+                    <li> <a href="#">Ask the CEO</a> </li>
+                </ul>
+                <div class="newsletter-sign-up">
+                <!--[if lte IE 8]>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                <![endif]-->
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                hbspt.forms.create({ 
                 css: '',
                 portalId: '3804151',
                 formId: '39e683fc-903a-4b93-9097-63d0a3b2ffcd'
-              });
-            </script>
-        </div>
-    </div>
-</div>
-    <div class="footer row top-buffer bottom-buffer">
-        <div class="small-logos text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/top-workplaces-badge45x29.png" style="height=100%;width=auto;margin-top: -10px" alt="Top Workplaces 2017">
-            <a href="https://www.facebook.com/worksharpculinary" target="_blank" rel="noopener noreferrer"><div class="social" onmouseover="svgMouseOver('facebook')" onmouseout="svgMouseOut('facebook')"><object id="facebook" data="<?php echo get_template_directory_uri(); ?>/assets/images/footer/facebook-icon.svg"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/facebook-icon.png" alt="Like us on Facebook"></object></div></a>
-            <a href="https://www.pinterest.com/wsculinary/?eq=work%20sharp%20culinary&etslf=7055" target="_blank" rel="noopener noreferrer"><div class="social" onmouseover="svgMouseOver('pinterest')" onmouseout="svgMouseOut('pinterest')"><object id="pinterest" data="<?php echo get_template_directory_uri(); ?>/assets/images/footer/pinterest-icon.svg"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/pinterest-icon.png" alt="Follow us on Pinterest"></object></div></a>
-            <a href="https://www.youtube.com/channel/UCw7LE4qI5Tu4vF7gDleV0Bw" target="_blank" rel="noopener noreferrer"><div class="social" onmouseover="svgMouseOver('youtube')" onmouseout="svgMouseOut('youtube')"><object id="youtube" data="<?php echo get_template_directory_uri(); ?>/assets/images/footer/youtube-icon.svg"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/youtube-icon.png" alt="Subscribe to our YouTube channel"></object></div></a>
-            <a href="https://www.instagram.com/worksharpculinary/" target="_blank" rel="noopener noreferrer"><div class="social" onmouseover="svgMouseOver('instagram')" onmouseout="svgMouseOut('instagram')"><object id="instagram" data="<?php echo get_template_directory_uri(); ?>/assets/images/footer/instagram-icon.svg"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/instagram-icon.png" alt="Follow us on Instagram"></object></div></a>
-        </div>
-        <div class="clearfix visible-xs-block"></div>
-        <div class="text-center">
-            <a style="padding-right:15px;vertical-align: -webkit-baseline-middle;" href="//www.worksharpculinary.com/about-us/">About</a>
-            <a style="padding-right:15px;vertical-align: -webkit-baseline-middle;" href="//inspiredby.worksharpculinary.com/category/press">Press</a>
-            <a style="padding-right:15px;vertical-align: -webkit-baseline-middle;" href="//www.worksharpculinary.com/work-sharp-culinary-policies/">Privacy</a>
-            <a style="padding-right:15px;vertical-align: -webkit-baseline-middle;" href="//www.worksharpculinary.com/shipping/">Shipping</a>
-            <a style="padding-right:15px;vertical-align: -webkit-baseline-middle;" href="//www.worksharpculinary.com/contact-us/">Contact</a>
-            <a style="padding-right:15px;vertical-align: -webkit-baseline-middle;" href="//inspiredby.worksharpculinary.com/">Blog</a>
-            <a style="padding-right:15px;vertical-align: -webkit-baseline-middle;" href="//www.worksharpculinary.com/ask-the-ceo">Ask&nbsp;the&nbsp;CEO</a>
-        </div>
-    </div>
-
-    <div class="footer row footer-border">
-            <h3 class="text-uppercase" style="font-weight: 300">A Proud member of the Darex Family</h3>
-            <div class="hidden-xs darex-logos">
-                <a href="http://www.worksharptools.com" target="_blank"><div><object data="<?php echo get_template_directory_uri(); ?>/assets/images/footer/wso-logo.svg"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/wso-logo.png"/></object></div></a>
-                <a href="http://www.drilldoctor.com/" target="_blank"><div><object data="<?php echo get_template_directory_uri(); ?>/assets/images/footer/dd-logo.svg"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/dd-logo.png"/></object></div></a>
-                <a href="http://www.darex.com/" target="_blank"><div><object data="<?php echo get_template_directory_uri(); ?>/assets/images/footer/dx-logo.svg"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/dx-logo.png"/></object></div></a>
+                });
+                </script>
+                </div>
+                <!--
+                <form class="newsletter-sign-up">
+                    <input type="email" name="email" placeholder="Sign Up for our newsletter">
+                    <input type="submit" value="Sign Up">
+                </form>
+                -->
             </div>
-            <div class="visible-xs darex-brands">
-                <a href="http://www.worksharptools.com" target="_blank">Work Sharp Outdoor</a>
-                <a href="http://www.drilldoctor.com" target="_blank">Drill Doctor</a>
-                <a href="http://www.darex.com" target="_blank">Darex</a>
+            <div class="footer-row2">
+                <p>©2018 INSPIRED BY WORK SHARP CULINARY. ALL RIGHTS RESERVED.</p>
             </div>
-    </div>
+        </footer> 
 
 
-</div>
+
+
+
 <script type="application/javascript">
 
     function svgMouseOver(id){
@@ -96,11 +120,7 @@
     }
 </script>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info container">
-			<?php echo ( get_theme_mod('madhat_footer_text') == '' ) ? ('&copy; '.date('Y').' '.get_bloginfo('name').__('. All Rights Reserved. ','madhat')) : get_theme_mod('madhat_footer_text'); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+
 	<script type="text/javascript">//<![CDATA[
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-15590411-7','auto');ga('require','displayfeatures');ga('send','pageview');var trackOutboundLink=function(url,event){ga('send','event',event,'click',url,{'transport':'beacon','hitCallback':function(){document.location=url;}});}
 	var trackModalLink=function(url,event,label,value){ga('send','event',event,'click',label,Math.round(value),{'transport':'beacon','hitCallback':function(){document.location=url;}});}
